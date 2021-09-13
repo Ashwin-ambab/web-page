@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <header class="main-header"> 
         <h1 class="heading-1">Header</h1>
+
+        <div class="dropdown" >
+            <button onclick="drpdwn()" class="dropdown-btn">Employee</button>
+            <div id="dd" class="dropdown-content">
+                <h6>JavaScrip</h6>
+                <h6>Java</h6>
+                <h6>Magneto</h6>
+            </div>
+        </div>
     </header>
     
     <nav class="navbar">
@@ -21,18 +31,39 @@
     <div class="section">
         <div class="article">
             <div class="articlebox">
-                <p class="para1">hgroup</p>
-                <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore, voluptatem rerum blanditiis cupiditate accusamus commodi assumenda error et ipsam odio omnis rem nulla accusantium sed iste soluta. Sapiente, consequuntur.</p>
+                <div class="para1">
+                    <h1 id="result"></h1>
+                </div>
+                <div class="para2">
+                    <div>
+                        <input id="num1" type="number" placeholder="number1"/> <br> <br>
+                        <input id='num2' type="number" placeholder="number2"/> <br> <br>
+                    </div>
+                    <div class="calculator">
+                        <button onclick="allClear()">AC</button>
+                        <button onclick="deletion()">DEL</button>
+                        <button onclick="division()">%</button> 
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                
+                    <div>
+                </div>
             </div>
-            <p class="inside">Aside</p>
             
         </div>
-        <p class="outside">Aside</p>
+    </div>
+    <div class="outside">Aside</div>
+    </div>
+     <div class="last"></div>
     </div>
 
     <footer class="footer">
         <h3>FOOTER</h3>
     </footer>
+
+    <script src="script.js"></script>
+
     
 </body>
 </html>
